@@ -1,0 +1,196 @@
+:root {
+  --priority-color-1: #356835;
+  --priority-color-2: #868643;
+  --priority-color-3: #7a4242;
+}
+#todoList {
+  background-color: var(--primaryColor);
+  position: relative;
+  transition: var(--mainTransition);
+  width: var(--todoWidth);
+  height: 100vh;
+}
+#todoList h1 {
+  text-align: center;
+  margin: 0;
+  font-weight: lighter;
+  user-select: none;
+}
+#todoForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+}
+#todoTitle {
+  background-color: transparent;
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  filter: contrast(70%);
+  height: 30px;
+  font-size: 15px;
+  padding: 0 5px;
+  outline: none;
+  color: white;
+  margin-bottom: 5px;
+}
+#todoText {
+  border: none;
+  background-color: transparent;
+  padding: 5px 5px 0 5px;
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  filter: contrast(70%);
+  height: 50px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+  resize: none;
+  overflow-y: hidden;
+}
+
+#addBtn {
+  color: white;
+  font-size: 15px;
+  background: none;
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  filter: contrast(70%);
+  height: 30px;
+  transition: var(--mainTransition);
+}
+#addBtn:hover {
+  cursor: pointer;
+  background-color: var(--tertiaryColor);
+}
+textarea {
+  outline: none;
+}
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--tertiaryColor);
+  border-radius: 5px;
+  filter: contrast(70%);
+  position: relative;
+  margin: 10px 5px;
+  padding: 5px;
+}
+.slide-in {
+  animation: slidein 0.4s ease-in-out;
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.taskText {
+  display: flex;
+  flex-direction: column;
+}
+.taskTitle {
+  font-size: 16px;
+  font-weight: bold;
+}
+.task p {
+  width: 250px;
+  font-size: 15px;
+  word-wrap: break-word;
+  margin: 0;
+}
+.statusBtn {
+  position: absolute;
+  left: 5px;
+  color: white;
+  border: none;
+  background-color: transparent;
+  transition: var(--mainTransition);
+  font-size: 25px;
+}
+.statusBtn:hover {
+  cursor: pointer;
+  color: var(--secondaryColor);
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  65% {
+    transform: translateY(-4%);
+  }
+  80% {
+    transform: translateY(4%);
+  }
+  95% {
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#taskList {
+  height: 770px;
+  overflow-y: auto;
+}
+#formBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.radioBtn {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+}
+.radioBtn:hover {
+  filter: brightness(150%);
+}
+
+.radioBtn:checked,
+.radioBtn:focus {
+  box-shadow: 0 0 0 2px #fff;
+  filter: brightness(150%);
+}
+#radioBtn1 {
+  background-color: var(--priority-color-1);
+}
+#radioBtn2 {
+  background-color: var(--priority-color-2);
+}
+#radioBtn3 {
+  background-color: var(--priority-color-3);
+}
+.priority {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+.remove {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.taskDesc {
+  padding-left: 2px;
+}
+.checked {
+  text-decoration: line-through;
+}

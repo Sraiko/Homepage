@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>·Home·</title>
+    <link rel="stylesheet" href="styles/pages.css" />
+    <link rel="stylesheet" href="styles/todo.css" />
+    <link rel="stylesheet" href="assets/fontawesome/all.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&family=Titillium+Web:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <section class="sections">
+        <div id="timeDate">
+          <div id="date"></div>
+          <div id="clock"></div>
+        </div>
+        <div id="middleContainer">
+          <div id="sectionsContainer">
+            <div class="siteSection">
+              <h3>Entertainment</h3>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/feed/subscriptions?flow=2">
+                    <i class="fa-brands fa-youtube"></i>
+                    Youtube</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.reddit.com/">
+                    <i class="fa-brands fa-reddit-alien"></i>
+                    Reddit</a
+                  >
+                </li>
+                <li>
+                  <a href="https://anilist.co/home">
+                    <i class="fa-solid fa-list"></i>
+                    Anilist</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.twitch.tv/directory/following">
+                    <i class="fa-brands fa-twitch"></i>
+                    Twitch</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="siteSection">
+              <h3>Torrenting</h3>
+              <ul>
+                <li>
+                  <a href="http://192.168.1.144:9091/transmission/web/">
+                    <i class="fa-solid fa-download"></i>
+                    Transmission</a
+                  >
+                </li>
+                <li>
+                  <a href="https://rarbgmirror.org/torrents.php?r=75376119">
+                    <i class="fa-solid fa-r"></i>
+                    RARBG</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.1377x.to/">
+                    <i class="fa-solid fa-x"></i> 1337x</a
+                  >
+                </li>
+                <li>
+                  <a href="https://nyaa.si/">
+                    <i class="fa-solid fa-n"></i> Nyaa</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="siteSection">
+              <h3>Code</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/Sraiko">
+                    <i class="fa-brands fa-github"></i> Github</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.codewars.com/dashboard">
+                    <i class="fa-solid fa-code"></i> Codewars</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="todoList">
+        <h1>To do</h1>
+        <form id="todoForm">
+          <input id="todoTitle" type="text" placeholder="Title" />
+          <textarea
+            id="todoText"
+            type="text"
+            placeholder="Explain the task..."
+          ></textarea>
+          <div id="formBtns">
+            <button type="submit" id="addBtn">Add Task</button>
+            <div id="radioBtns">
+              <input
+                id="radioBtn1"
+                class="radioBtn"
+                type="radio"
+                value="1"
+                name="priority"
+                checked="checked"
+              />
+              <input
+                id="radioBtn2"
+                class="radioBtn"
+                type="radio"
+                value="2"
+                name="priority"
+              />
+              <input
+                id="radioBtn3"
+                class="radioBtn"
+                type="radio"
+                value="3"
+                name="priority"
+              />
+            </div>
+          </div>
+        </form>
+        <div id="taskList"></div>
+      </section>
+    </main>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/todo.js"></script>
+  </body>
+</html>

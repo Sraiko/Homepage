@@ -1,0 +1,153 @@
+:root {
+  --primaryColor: #16151d;
+  --secondaryColor: #ef2475;
+  --tertiaryColor: #201f27;
+  --mainTransition: all 0.3s linear;
+  --todoWidth: 350px;
+}
+
+body {
+  background-color: var(--primaryColor);
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100% - var(--todoWidth));
+  height: 100vh;
+  background: url('../assets/background.jpg') center no-repeat;
+}
+
+.siteSection {
+  padding: 20px;
+}
+
+.siteSection h3 {
+  border-bottom: 1px solid #ffffff;
+  margin: 0 10px;
+  padding: 0 0 0 5px;
+  font-size: 20px;
+  color: var(--primaryColor);
+  filter: contrast(0);
+  font-family: 'QuickSand', sans-serif;
+  cursor: default;
+  user-select: none;
+}
+
+.siteSection ul {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.siteSection li {
+  margin: 0;
+  padding: 3px 0 3px 0;
+  font-size: 18px;
+}
+
+.siteSection a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #aaaaaa;
+  transition: var(--mainTransition);
+  background-color: var(--tertiaryColor);
+  filter: contrast(90%);
+  margin: 0 5px;
+  padding: 5px;
+  font-size: 20px;
+  user-select: none;
+}
+
+.siteSection i {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.siteSection a:hover {
+  color: #ffffff;
+  box-shadow: 0 3px 0 0 #33323d;
+}
+#middleContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+#sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiaryColor);
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px;
+}
+#mid-image {
+  height: 100%;
+  width: 900px;
+}
+#imgContainer {
+  display: flex;
+  justify-content: center;
+  width: 550px;
+  overflow: hidden;
+}
+#timeDate {
+  display: flex;
+  flex-direction: row;
+  font-size: 35px;
+  position: absolute;
+  top: 140px;
+  user-select: none;
+  text-align: center;
+}
+#timeDate div {
+  width: 200px;
+  text-shadow: 1px 1px 3px var(--tertiaryColor);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+.fa-reddit-alien {
+  color: white;
+}
+.fa-list {
+  color: #3db4f2;
+}
+.fa-twitch {
+  color: #6441a5;
+}
+.fa-download {
+  color: gray;
+}
+.fa-r {
+  color: #3860bb;
+}
+.fa-x {
+  color: #ff6735;
+}
+.fa-n {
+  color: #337ab7;
+}
+.fa-github {
+  color: white;
+}
+.fa-code {
+  color: #b1361e;
+}
