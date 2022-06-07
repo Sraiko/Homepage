@@ -3,7 +3,6 @@ const startDay = () => {
   let d = today.getDate();
   let mo = today.getMonth() + 1;
   let y = today.getFullYear();
-  console.log(today.getDate());
   d = checkDay(d);
   mo = checkDay(mo);
   document.getElementById('date').innerHTML = d + '/' + mo + '/' + y;
